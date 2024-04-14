@@ -67,10 +67,10 @@ if __name__ == '__main__':
     cap = cv2.VideoCapture(0)
 
     streamer = VideoStreamingTest(host, port)
+    streamer.start()
 
     while True:
         ret, frame = cap.read()
-        streamer.start()
         streamer.send(frame)
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break

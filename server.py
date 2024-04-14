@@ -7,7 +7,7 @@ import struct
 import time
 
 
-class VideoStreamingTest(object):
+class VideoStreaming(object):
     def __init__(self, host, port):
 
         self.server_socket = socket.socket()			# 获取socket.socket()实例
@@ -66,7 +66,7 @@ if __name__ == '__main__':
 
     cap = cv2.VideoCapture(0)
 
-    streamer = VideoStreamingTest(host, port)
+    streamer = VideoStreaming(host, port)
     streamer.start()
 
     while True:

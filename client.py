@@ -38,6 +38,7 @@ class ReceiveImg(object):
 
 
 if __name__ == '__main__':
+    # TODO: 将下面的IP地址改为发送端的IP地址
     reveiver = ReceiveImg('192.168.137.112', 8000)
     while True:
         img = reveiver.read()

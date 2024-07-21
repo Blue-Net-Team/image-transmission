@@ -20,7 +20,7 @@ class ReceiveImg(object):
         print("Host : ", host)
         print("请按‘q’退出图像传输!")
 
-    def receive(self):
+    def read(self):
         try:
             msg = self.connection.read(1024)						# 读makefile传输文件，一次读1024个字节
             self.stream_bytes += msg
@@ -39,9 +39,8 @@ class ReceiveImg(object):
 
 if __name__ == '__main__':
     reveiver = ReceiveImg('192.168.137.112', 8000)
-    #TODO:等待测试
     while True:
-        img = reveiver.receive()
+        img = reveiver.read()
         if img is None:
             continue
         cv2.imshow('ori', img)

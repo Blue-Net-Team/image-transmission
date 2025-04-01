@@ -2,8 +2,8 @@ from setuptools import setup, find_packages
 
 setup(
     name="ImgTrans",
-    version="1.0.0",
-    description="(局域网)远程图传",
+    version="2.0.0",
+    description="远程图传",
     long_description=open("README.rst").read(),
     long_description_content_type="text/markdown",
     author="IVEN-CN",
@@ -15,7 +15,7 @@ setup(
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: GNU Affero General Public License v3",
+        "License :: OSI Approved :: Apache Software License",
         "Operating System :: OS Independent",
     ],
     python_requires=">=3.6",

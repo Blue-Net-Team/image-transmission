@@ -11,7 +11,7 @@ setup(
     url="https://github.com/Blue-Net-Team/remote-image-transmission.git",
     packages=find_packages(),
     install_requires=[
-        "opencv-python==4.5.1",
+        "opencv-python>=4.8.1.78",
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
